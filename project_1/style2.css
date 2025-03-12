@@ -55,56 +55,66 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-.todays-weather {
-  margin-left: 8.5%;
+
+.main-news {
   background-color: #D3D3D3;
-  padding: 20px;
   width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px; 
+}
+
+.main-news img {
+  width: 90%;
+  height: 500px;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.main-news a, .main-news p {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sub-news {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-.todays-weather ul, h2 {
-  list-style-type: none;
-  margin-left: 50px;
-}
-.todays-weather img {
-  width: auto;
-  height: 400px;
-  margin-left: 140px;
-}
-.forecast {
+
+.sub-news-item {
   background-color: #D3D3D3;
-  width: 80%;
-  margin-left: 8.5%;
+  width: 30%;
+  padding: 10px;
   text-align: center;
 }
-.forecast ul {
-  list-style-type: none;
+
+.sub-news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-.days {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
+
+.sub-news-item a {
+  font-size: 18px;
+  color: black;
+  display: block;
+  margin-top: 10px;
 }
-.week-weather {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 130px;
+
+.sub-news-item p {
+  font-size: 14px;
+  margin-top: 5px;
 }
-.temp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 150px;
-}
+
 footer {
   background-color: #A9A9A9;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#current-temp, #current-windChill, #current-humid, #current-windSpeed {
-  font-weight: bold;
 }
